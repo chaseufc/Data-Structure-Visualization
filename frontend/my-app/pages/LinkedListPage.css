@@ -1,0 +1,88 @@
+/* Style for the linked list container */
+.linked-list-container {
+    font-family: "Helvetica";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .linked-list-title {
+    font-size: 40px; /* Adjust as needed */
+  }
+  /* Style for the node */
+  .node {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #3498db; /* Node color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0; /* Adjust as needed */
+  }
+  
+  /* Style for the line */
+  .line {
+    position: absolute;
+    border-left: 2px solid #ccc; /* Neutral line color */
+    height: calc(100% + 100px); /* Line height */
+    top: 50%; /* Center the line vertically */
+    left: 50%;
+    transform: translateX(-50%); /* Center the line horizontally */
+    z-index: -1 /* Ensure lines are below nodes */
+  }
+  
+  /* Style for the head node */
+  .node.head {
+    background-color: #2ecc71; /* Head node color */
+  }
+  
+  /* Style for the tail node */
+  .node.tail {
+    background-color: #e74c3c; /* Tail node color */
+  }
+  
+  /* Style for the value inside the node */
+  .node-value {
+    z-index: 1;
+  }
+  
+  /* Remove bullet points from the list */
+  .nodes-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style for the line between nodes */
+  .line + .node {
+    margin-top: 50px; /* Adjust as needed */
+  }
+
+  /* Style for the add and delete buttons */
+.button-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+.button-container button {
+    margin: 0 5px; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust as needed */
+    background-color: #3498db; /* Button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+  
+.button-container button:hover {
+    background-color: #2980b9; /* Button color on hover */
+}
